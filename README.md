@@ -2,7 +2,7 @@
 
 ## SET UP RABBIT MQ VIA DOCKER
 
-1. [Download docker desktop](https://www.docker.com/products/docker-desktop/) =
+1. [Download docker desktop](https://www.docker.com/products/docker-desktop/)
 2. Start Docker Desktop
 3. Run Command `docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4.0-management`
 4. Run Command `python -m venv .`
