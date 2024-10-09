@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from src.producers.producer import produce
+from src.consumers.consumer import run as run_consumers
 
 from src.models.message import Message
 

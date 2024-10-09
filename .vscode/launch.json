@@ -5,12 +5,27 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python Debugger: Current File with Arguments",
+            "name": "Rabbit Producer API",
             "type": "debugpy",
             "request": "launch",
             "program": "main.py",
             "console": "integratedTerminal",
             "justMyCode": true
+        },
+        {
+            "name": "Rabbit Consumer API",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "consumer_main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Compound",
+            "configurations": ["Rabbit Producer API", "Rabbit Consumer API"],
+            "stopAll": true
         }
     ]
 }
